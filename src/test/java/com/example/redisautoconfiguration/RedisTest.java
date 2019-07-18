@@ -27,8 +27,8 @@ public class RedisTest {
     @Test
     public void test(){
         System.out.println("begin");
-        mainStringRedisTemplate.opsForValue().set("key","this is 6379");
-        lesserStringRedisTemplate.opsForValue().set("key","this is 6333");
+        mainStringRedisTemplate.opsForValue().set("test","this is 6379");
+        lesserStringRedisTemplate.opsForValue().set("test","this is 6333");
 
     }
 }
