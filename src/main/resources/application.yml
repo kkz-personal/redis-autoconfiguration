@@ -1,16 +1,22 @@
 
-
-
 spring:
   main-redis:
+# redis的地址
     host: localhost
+# redis 的端口
     port: 6379
+#redis 的连接超时时间(毫秒)
     timeout: 6000
+#redis 的密码 默认为空
     password:
     pool:
+#redis 连接池最大连接数
       max-active: 10
+#redis 连接池最大空闲连接
       max-idle: 5
+#redis 连接池最大阻塞等待时间
       max-wait: 2
+#redis 连接池最小空闲连接数
       min-idle: 1
   lesser-redis:
       host: localhost
